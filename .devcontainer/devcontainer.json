@@ -6,7 +6,6 @@
     "containerEnv": {
         "DEVCONTAINER": "1"
     },
-    "appPort": 8000,
     "runArgs": [
         "-e",
         "GIT_EDITOR=code --wait"
