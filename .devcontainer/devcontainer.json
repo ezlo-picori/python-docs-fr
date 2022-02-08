@@ -1,0 +1,15 @@
+{
+    "name": "Environnement de traduction française de la Documentation Python",
+    "context": "..",
+    "dockerFile": "./Dockerfile.dev",
+    "postCreateCommand": "./script/setup",
+    "containerEnv": { "DEVCONTAINER": "1" },
+    "appPort": 8000,
+    "runArgs": ["-e", "GIT_EDITOR=code --wait"],
+    "extensions": [
+        "mrorz.language-gettext"
+      ],
+    "settings": {
+        "editor.rulers": [ 79 ]
+    }
+}
