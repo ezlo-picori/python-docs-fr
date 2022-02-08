@@ -13,3 +13,9 @@ make venv/cpython/.git/HEAD
 
 # Install python deps
 python3 -m pip install -r requirements.txt -r venv/cpython/Doc/requirements.txt
+
+# Generate .vscode configuration
+if [ ! -d ".vscode" ]; then
+    mkdir .vscode
+    cp .devcontainer/vsconde/*.json .vscode/
+fi

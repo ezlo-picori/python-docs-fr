@@ -3,13 +3,26 @@
     "context": "..",
     "dockerFile": "./Dockerfile.dev",
     "postCreateCommand": ".devcontainer/script/setup",
-    "containerEnv": { "DEVCONTAINER": "1" },
+    "containerEnv": {
+        "DEVCONTAINER": "1"
+    },
     "appPort": 8000,
-    "runArgs": ["-e", "GIT_EDITOR=code --wait"],
+    "runArgs": [
+        "-e",
+        "GIT_EDITOR=code --wait"
+    ],
     "extensions": [
         "mrorz.language-gettext"
-      ],
+    ],
     "settings": {
-        "editor.rulers": [ 79 ]
+        "editor.rulers": [
+            79
+        ],
+        "terminal.integrated.profiles.linux": {
+            "zsh": {
+                "path": "/usr/bin/zsh"
+            }
+        },
+        "terminal.integrated.defaultProfile.linux": "zsh"
     }
 }
