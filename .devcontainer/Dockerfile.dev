@@ -7,6 +7,7 @@ RUN \
     && apt-get update \
     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
         # Additional library needed by some tests and accordingly by VScode Tests Discovery
+        gettext \
         git \
         hunspell \
         hunspell-fr-comprehensive \
