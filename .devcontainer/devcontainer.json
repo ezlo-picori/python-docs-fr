@@ -13,6 +13,7 @@
     "extensions": [
         "mrorz.language-gettext"
     ],
+    "forwardPorts": [8000],
     "settings": {
         "editor.rulers": [
             79
