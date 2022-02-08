@@ -85,8 +85,7 @@ venv/cpython/.git/HEAD:
 	git clone https://github.com/python/cpython venv/cpython
 
 .git/refs/heads/$(BRANCH):
-	git fetch $(git remote) $(BRANCH) $(BRANCH)
-
+	git fetch $(shell git remote | head -n 1) $(BRANCH):$(BRANCH)
 
 .PHONY: ensure_prerequisites
 ensure_prerequisites: venv/cpython/.git/HEAD .git/refs/heads/$(BRANCH)
