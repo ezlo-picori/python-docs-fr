@@ -16,77 +16,93 @@ msgstr ""
 
 #: using/configure.rst:3
 msgid "Configure Python"
-msgstr ""
+msgstr "Configurer Python"
 
 #: using/configure.rst:8
 msgid "Configure Options"
-msgstr ""
+msgstr "Options de configuration"
 
 #: using/configure.rst:10
 msgid "List all ``./configure`` script options using::"
-msgstr ""
+msgstr "Listez toutes les options du script ``./configure`` avec ::"
 
 #: using/configure.rst:14
 msgid ""
 "See also the :file:`Misc/SpecialBuilds.txt` in the Python source "
 "distribution."
 msgstr ""
+"Voyez aussi le :file:`Misc/SpecialBuilds.txt` dans la distribution des "
+"sources Python."
 
 #: using/configure.rst:17
 msgid "General Options"
-msgstr ""
+msgstr "Options générales"
 
 #: using/configure.rst:21
 msgid ""
 "Support loadable extensions in the :mod:`_sqlite` extension module (default "
 "is no)."
 msgstr ""
+"Active la prise en charge des extensions chargeables dans le module "
+"d'extension :mod:`_sqlite` (désactivé par défaut)."
 
 #: using/configure.rst:24
 msgid ""
 "See the :meth:`sqlite3.Connection.enable_load_extension` method of the :mod:"
 "`sqlite3` module."
 msgstr ""
+"Voir la méthode  :meth:`sqlite3.Connection.enable_load_extension` du module :"
+"mod:`sqlite3`."
 
 #: using/configure.rst:31
 msgid ""
 "Disable IPv6 support (enabled by default if supported), see the :mod:"
 "`socket` module."
 msgstr ""
+"Désactive le support IPv6 (activé par défaut si géré), voir le module :mod:"
+"`socket`."
 
 #: using/configure.rst:36
 msgid "Define the size in bits of Python :class:`int` digits: 15 or 30 bits."
 msgstr ""
+"Défini la taille en bits des chiffres Python :class:`int` : 15 ou 30 bits."
 
 #: using/configure.rst:38
 msgid ""
 "By default, the number of bits is selected depending on ``sizeof(void*)``: "
 "30 bits if ``void*`` size is 64-bit or larger, 15 bits otherwise."
 msgstr ""
+"Par défaut, le nombre de bits est basé sur ``sizeof(void*)`` : 30 bits si la "
+"taille de ``void*`` est de 64-bits ou plus, sinon 15 bits."
 
 #: using/configure.rst:41
 msgid "Define the ``PYLONG_BITS_IN_DIGIT`` to ``15`` or ``30``."
-msgstr ""
+msgstr "Défini ``PYLONG_BITS_IN_DIGIT`` à ``15`` ou ``30``."
 
 #: using/configure.rst:43
 msgid "See :data:`sys.int_info.bits_per_digit <sys.int_info>`."
-msgstr ""
+msgstr "Voir :data:`sys.int_info.bits_per_digit <sys.int_info>`."
 
 #: using/configure.rst:48
 msgid ""
 "Compile the Python ``main()`` function and link Python executable with C++ "
 "compiler: ``$CXX``, or *COMPILER* if specified."
 msgstr ""
+"Compile la fonction Python ``main()`` et édite les liens de l'exécutable "
+"Python avec le compilateur C++ : ``$CXX``, ou *COMPILER* si spécifié."
 
 #: using/configure.rst:53
 msgid "Set the Python executable suffix to *SUFFIX*."
-msgstr ""
+msgstr "Défini à *SUFFIX* le suffixe de l'exécutable Python."
 
 #: using/configure.rst:55
 msgid ""
 "The default suffix is ``.exe`` on Windows and macOS (``python.exe`` "
 "executable), and an empty string on other platforms (``python`` executable)."
 msgstr ""
+"Le suffixe par défaut est ``.exe`` sur Windows et Mac OS (exécutable "
+"``python.exe``) et une chaîne vide sur les autres plateformes (exécutable "
+"``python``)."
 
 #: using/configure.rst:60
 msgid ""
@@ -94,47 +110,59 @@ msgid ""
 "the :ref:`Compile-time configuration <zoneinfo_data_compile_time_config>` of "
 "the :mod:`zoneinfo` module."
 msgstr ""
+"Défini le chemin par défaut de recherche des fuseaux horaires pour :data:"
+"`zoneinfo.TZPATH`. Voir la :ref:`Configuration à la compilation "
+"<zoneinfo_data_compile_time_config>` du module :mod:`zoneinfo`."
 
 #: using/configure.rst:64
 msgid ""
 "Default: ``/usr/share/zoneinfo:/usr/lib/zoneinfo:/usr/share/lib/zoneinfo:/"
 "etc/zoneinfo``."
 msgstr ""
+"Par défaut : ``/usr/share/zoneinfo:/usr/lib/zoneinfo:/usr/share/lib/"
+"zoneinfo:/etc/zoneinfo``."
 
 #: using/configure.rst:66
 msgid "See :data:`os.pathsep` path separator."
-msgstr ""
+msgstr "Voir le séparateur de chemins :data:`os.pathsep`."
 
 #: using/configure.rst:72
 msgid ""
 "Build the ``_decimal`` extension module using a thread-local context rather "
 "than a coroutine-local context (default), see the :mod:`decimal` module."
 msgstr ""
+"Compile le module d'extension ``_decimal`` en utilisant un contexte local au "
+"fil d'exécution plutôt qu'un contexte local de coroutine (défaut). Voir le "
+"module :mod:`decimal`."
 
 #: using/configure.rst:75
 msgid "See :data:`decimal.HAVE_CONTEXTVAR` and the :mod:`contextvars` module."
-msgstr ""
+msgstr "Voir :data:`decimal.HAVE_CONTEXTVAR` et le module :mod:`contextvars`."
 
 #: using/configure.rst:81
 msgid "Override order to check db backends for the :mod:`dbm` module"
 msgstr ""
+"Change l'ordre de détection des implémentations de base de données pour le "
+"module :mod:`dbm`."
 
 #: using/configure.rst:83
 msgid ""
 "A valid value is a colon (``:``) separated string with the backend names:"
 msgstr ""
+"Une valeur valide est une chaîne de noms d'implémentations séparés par des "
+"signes deux-points (``:``)."
 
 #: using/configure.rst:85
 msgid "``ndbm``;"
-msgstr ""
+msgstr "``ndbm`` ;"
 
 #: using/configure.rst:86
 msgid "``gdbm``;"
-msgstr ""
+msgstr "``gdbm`` ;"
 
 #: using/configure.rst:87
 msgid "``bdb``."
-msgstr ""
+msgstr "``bdb``."
 
 #: using/configure.rst:91
 msgid "Disable C locale coercion to a UTF-8 based locale (enabled by default)."
