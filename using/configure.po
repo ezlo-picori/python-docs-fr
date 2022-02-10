@@ -6,8 +6,8 @@ msgstr ""
 "Project-Id-Version: Python 3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-21 15:04+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2022-02-10 21:54+0200\n"
+"Last-Translator: Ezlo Picori <ezlo@protonmail.com>\n"
 "Language-Team: FRENCH <traductions@lists.afpy.org>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
@@ -178,21 +178,23 @@ msgstr ""
 
 #: using/configure.rst:99
 msgid "Python library directory name (default is ``lib``)."
-msgstr ""
+msgstr "Nom du dossier de bibliothèques Python (par défaut : ``lib``)."
 
 #: using/configure.rst:101
 msgid "Fedora and SuSE use ``lib64`` on 64-bit platforms."
-msgstr ""
+msgstr "Fedora et *SuSE* utilisent ``lib64`` sur les systèmes 64-bit."
 
 #: using/configure.rst:103
 msgid "See :data:`sys.platlibdir`."
-msgstr ""
+msgstr "Voir :data:`sys.platlibdir`."
 
 #: using/configure.rst:109
 msgid ""
 "Directory of wheel packages used by the :mod:`ensurepip` module (none by "
 "default)."
 msgstr ""
+"Dossier de paquets *wheel* utilisé par le module :mod:`ensurepip` (par "
+"défaut : aucun)."
 
 #: using/configure.rst:112
 msgid ""
@@ -201,56 +203,74 @@ msgid ""
 "share/python-wheels/`` directory and don't install the :mod:`ensurepip."
 "_bundled` package."
 msgstr ""
+"La politique de paquets de certaines distributions Linux déconseille "
+"l'inclusion des dépendances. Par exemple, Fedora installe les paquets "
+"*wheel* dans le répertoire ``/usr/share/python-wheels/`` et n'installe pas "
+"le paquet ``ensurepip._bundled``."
 
 #: using/configure.rst:121
 msgid "Install Options"
-msgstr ""
+msgstr "Options d'installation"
 
 #: using/configure.rst:125
 msgid ""
 "Don't build nor install test modules, like the :mod:`test` package or the :"
 "mod:`_testcapi` extension module (built and installed by default)."
 msgstr ""
+"Désactive la compilation et l'installation des modules de test, comme le "
+"paquet :mod:`test` et le module d'extension :mod:`_testcapi` (compilés et "
+"installés par défaut)."
 
 #: using/configure.rst:132
 msgid "Select the :mod:`ensurepip` command run on Python installation:"
 msgstr ""
+"Sélectionne la commande :mod:`ensurepip` exécutée à l'installation de "
+"Python :"
 
 #: using/configure.rst:134
 msgid ""
 "``upgrade`` (default): run ``python -m ensurepip --altinstall --upgrade`` "
 "command."
 msgstr ""
+"``upgrade`` (défaut) : exécute la commande ``python -m ensurepip --"
+"altinstall --upgrade`` ;"
 
 #: using/configure.rst:136
 msgid "``install``: run ``python -m ensurepip --altinstall`` command;"
 msgstr ""
+"``install`` : exécute la commande ``python -m ensurepip --altinstall`` ;"
 
 #: using/configure.rst:137
 msgid "``no``: don't run ensurepip;"
-msgstr ""
+msgstr "``no`` : n'exécute pas *ensurepip*."
 
 #: using/configure.rst:143
 msgid "Performance options"
-msgstr ""
+msgstr "Options de performance"
 
 #: using/configure.rst:145
 msgid ""
 "Configuring Python using ``--enable-optimizations --with-lto`` (PGO + LTO) "
 "is recommended for best performance."
 msgstr ""
+"Pour de meilleures performances, il est recommandé de configurer Python avec "
+"``--enable-optimizations --with-lto`` (*OGP* + *OEL*)."
 
 #: using/configure.rst:150
 msgid ""
 "Enable Profile Guided Optimization (PGO) using :envvar:`PROFILE_TASK` "
 "(disabled by default)."
 msgstr ""
+"Active l'Optimisation Guidée par Profilage (*OGP*) en utilisant :envvar:"
+"`PROFILE_TASK` (désactivé par défaut)."
 
 #: using/configure.rst:153
 msgid ""
 "The C compiler Clang requires ``llvm-profdata`` program for PGO. On macOS, "
 "GCC also requires it: GCC is just an alias to Clang on macOS."
 msgstr ""
+"L'*OGP* avec le compilateur C *Clang* nécessite ``llvm-profdata``. Sur Mac "
+"OS, *GCC* est juste un alias vers *Clang* et partage donc cette contrainte."
 
 #: using/configure.rst:156
 msgid ""
@@ -258,30 +278,40 @@ msgid ""
 "GCC is used: add ``-fno-semantic-interposition`` to the compiler and linker "
 "flags."
 msgstr ""
+"Désactive également l'interposition sémantique dans *libpython* si *GCC* est "
+"utilisé avec ``--enable-shared`` : ajoute l'option ``-fno-semantic-"
+"interposition`` à la compilation et à l'édition des liens."
 
 #: using/configure.rst:162
 msgid "Use ``-fno-semantic-interposition`` on GCC."
-msgstr ""
+msgstr "Utilisation de ``-fno-semantic-interposition`` avec *GCC*."
 
 #: using/configure.rst:167
 msgid ""
 "Environment variable used in the Makefile: Python command line arguments for "
 "the PGO generation task."
 msgstr ""
+"Variable d'environnement utilisée dans le *Makefile* : arguments Python "
+"utilisés pour la tâche de préparation de l'*OGP*."
 
 #: using/configure.rst:170
 msgid "Default: ``-m test --pgo --timeout=$(TESTTIMEOUT)``."
-msgstr ""
+msgstr "Par défaut : ``-m test --pgo --timeout=$(TESTTIMEOUT)``."
 
 #: using/configure.rst:176
 msgid "Enable Link Time Optimization (LTO) in any build (disabled by default)."
 msgstr ""
+"Active l'Optimisation à l'Édition des Liens (*OEL*) à la compilation "
+"(désactivé par défaut)."
 
 #: using/configure.rst:178
 msgid ""
 "The C compiler Clang requires ``llvm-ar`` for LTO (``ar`` on macOS), as well "
 "as an LTO-aware linker (``ld.gold`` or ``lld``)."
 msgstr ""
+"Le compilateur C *Clang* nécessite ``llvm-ar`` pour l'*OEL* (``ar`` sur Mac "
+"OS), ainsi qu'un éditeur de liens supportant l'*OEL* (``ld.gold`` ou "
+"``lld``)."
 
 #: using/configure.rst:185
 msgid ""
