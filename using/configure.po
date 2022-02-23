@@ -429,13 +429,16 @@ msgstr ""
 
 #: using/configure.rst:235
 msgid "Add sanity checks on the function arguments."
-msgstr ""
+msgstr "Ajout des contrôles d'intégrité sur les arguments de fonction."
 
 #: using/configure.rst:236
 msgid ""
 "Unicode and int objects are created with their memory filled with a pattern "
 "to detect usage of uninitialized objects."
 msgstr ""
+"Les objets ``unicode`` et ``int`` sont créés avec un motif particulier à "
+"l'initialisation de leur mémoire afin de détecter l'usage d'objets non "
+"initialisés."
 
 #: using/configure.rst:238
 msgid ""
