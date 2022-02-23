@@ -206,7 +206,7 @@ msgstr ""
 "La politique de paquets de certaines distributions Linux déconseille "
 "l'inclusion des dépendances. Par exemple, Fedora installe les paquets "
 "*wheel* dans le répertoire ``/usr/share/python-wheels/`` et n'installe pas "
-"le paquet ``ensurepip._bundled``."
+"le paquet :mod:`ensurepip._bundled`."
 
 #: using/configure.rst:121
 msgid "Install Options"
@@ -324,80 +324,95 @@ msgid ""
 "Disable the specialized Python memory allocator :ref:`pymalloc <pymalloc>` "
 "(enabled by default)."
 msgstr ""
+"Désactive l'allocateur spécialisé de mémoire de Python :ref:`pymalloc "
+"<pymalloc>` (activé par défaut)."
 
 #: using/configure.rst:193
 msgid "See also :envvar:`PYTHONMALLOC` environment variable."
-msgstr ""
+msgstr "Voir aussi la variable d'environnement :envvar:`PYTHONMALLOC`."
 
 #: using/configure.rst:197
 msgid ""
 "Disable static documentation strings to reduce the memory footprint (enabled "
 "by default). Documentation strings defined in Python are not affected."
 msgstr ""
+"Désactive les chaînes de documentation statiques pour réduire l'empreinte "
+"mémoire (activé par défaut). Les chaînes définie dans Python ne sont pas "
+"affectées."
 
 #: using/configure.rst:200
 msgid "Don't define the ``WITH_DOC_STRINGS`` macro."
-msgstr ""
+msgstr "Ne définit pas la macro ``WITH_DOC_STRINGS``."
 
 #: using/configure.rst:202
 msgid "See the ``PyDoc_STRVAR()`` macro."
-msgstr ""
+msgstr "Voir la macro ``PyDoc_STRVAR()``."
 
 #: using/configure.rst:206
 msgid "Enable C-level code profiling with ``gprof`` (disabled by default)."
-msgstr ""
+msgstr "Active le profilage du code C avec ``gprof`` (désactivé par défaut)."
 
 #: using/configure.rst:212
 msgid "Python Debug Build"
-msgstr ""
+msgstr "Compilation de Python en mode débogage"
 
 #: using/configure.rst:214
 msgid ""
 "A debug build is Python built with the :option:`--with-pydebug` configure "
 "option."
 msgstr ""
+"Une compilation de Python en mode débogage se fait avec l'option de "
+"configuration :option:`--with-pydebug`."
 
 #: using/configure.rst:217
 msgid "Effects of a debug build:"
-msgstr ""
+msgstr "Effets du mode débogage :"
 
 #: using/configure.rst:219
 msgid ""
 "Display all warnings by default: the list of default warning filters is "
 "empty in the :mod:`warnings` module."
 msgstr ""
+"Affichage de tous les avertissements par défaut : le filtre par défaut des "
+"avertissements est vide dans le module :mod:`warnings`."
 
 #: using/configure.rst:221
 msgid "Add ``d`` to :data:`sys.abiflags`."
-msgstr ""
+msgstr "Ajout de ``d`` à :data:`sys.abiflags`."
 
 #: using/configure.rst:222
 msgid "Add :func:`sys.gettotalrefcount` function."
-msgstr ""
+msgstr "Ajout de la fonction :func:`sys.gettotalrefcount`."
 
 #: using/configure.rst:223
 msgid "Add :option:`-X showrefcount <-X>` command line option."
-msgstr ""
+msgstr "Ajout de l'option de ligne de commande :option:`-X showrefcount <-X>`."
 
 #: using/configure.rst:224
 msgid "Add :envvar:`PYTHONTHREADDEBUG` environment variable."
-msgstr ""
+msgstr "Ajout de la variable d'environnement :envvar:`PYTHONTHREADDEBUG`."
 
 #: using/configure.rst:225
 msgid ""
 "Add support for the ``__ltrace__`` variable: enable low-level tracing in the "
 "bytecode evaluation loop if the variable is defined."
 msgstr ""
+"Ajout du support de la variable ``__ltrace__`` : si la variable est définie, "
+"active le traçage de bas niveau dans la boucle d'évaluation du code "
+"intermédiaire."
 
 #: using/configure.rst:227
 msgid ""
 "Install :ref:`debug hooks on memory allocators <default-memory-allocators>` "
 "to detect buffer overflow and other memory errors."
 msgstr ""
+"Installation des :ref:`debug hooks on memory allocators <default-memory-"
+"allocators>` pour détecter les débordement de mémoire tampon et autres "
+"erreurs mémoires."
 
 #: using/configure.rst:229
 msgid "Define ``Py_DEBUG`` and ``Py_REF_DEBUG`` macros."
-msgstr ""
+msgstr "Définition des macros ``Py_DEBUG`` et ``Py_REF_DEBUG``."
 
 #: using/configure.rst:230
 msgid ""
@@ -406,6 +421,11 @@ msgid ""
 "the ``NDEBUG`` macro (see also the :option:`--with-assertions` configure "
 "option). Main runtime checks:"
 msgstr ""
+"Ajout de vérifications à l'exécution : codes entourés de ``#ifdef Py_DEBUG`` "
+"et ``#endif``. Active les assertions ``assert(...)`` et "
+"``_PyObject_ASSERT(...)`` : ne définit pas la macro ``NDEBUG`` (voir aussi "
+"l'option de configuration :option:`--with-assertions`). Principales "
+"vérifications à l'exécution :"
 
 #: using/configure.rst:235
 msgid "Add sanity checks on the function arguments."
